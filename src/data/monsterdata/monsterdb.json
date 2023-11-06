@@ -1,0 +1,63 @@
+{
+  "0": {
+    "mid": "0",
+    "species": "Eraeden",
+    "ivs": {
+      "health": 100,
+      "green_o": 101,
+      "white_o": 1000,
+      "white_d": 1000,
+      "blue_o": 1
+    },
+    "evs": {
+      "health": 100,
+      "green_o": 102,
+      "white_d": 1000
+    },
+    "moves": [
+      "Arkadius",
+      "Lore of Eternity"
+    ],
+    "abilities": [
+      "Asharion",
+      "lollypop"
+    ],
+    "omni": "Zwart Defeat",
+    "form": "Cosmos",
+    "owner": "blazar_vastel",
+    "wish": "Exanophel",
+    "markings": [
+      "Event Ribbon: Archaon the Wish Granter. A Ribbon said to make your wish come true. Part of the \"Special Release Event\" and allows the monster to use the ability \"Asharion\" outside of battle, and the move \"Arkadius\" outside of battle. This allows the monster to do or create anything in the game using a special scripting language.",
+      "Initial Release Event: Given out as part of the special release event for the first 100 players who joined.",
+      "[Event Set Number: SRE:#00]"
+    ]
+  },
+  "1": {
+    "mid": "1",
+    "species": "Eraeden",
+    "ivs": {
+      "health": 11,
+      "green_o": 10,
+      "white_o": 1000,
+      "white_d": 50
+    },
+    "evs": {
+      "health": 100,
+      "green_o": 102,
+      "white_d": 50
+    },
+    "moves": [
+      "Asharion2",
+      "Lore of Eternity"
+    ],
+    "abilities": [
+      "Trollarion",
+      "lollypop"
+    ],
+    "omni": "Zwart 2 Defeat",
+    "form": "Dyus",
+    "owner": "blazar_2_vastel",
+    "wish": "Asphodel"
+  }
+
+}

@@ -1,0 +1,179 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Arkhon</Name>
+    <RootNamespace>Arkhon</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9dbfc388-176a-4374-8ef3-02a39459947f</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.ts</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <EnableTypeScript>true</EnableTypeScript>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="app.ts" />
+    <Content Include=".gitignore" />
+    <Content Include="data\accountdata\accountdb.json" />
+    <Content Include="data\accountdata\accountdb_write.json" />
+    <Content Include="data\monsterdata\monsterdb.json" />
+    <Content Include="data\monsterdata\monsterdb_write.json" />
+    <Content Include="jest.config.js" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="tsconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
+    <Folder Include="data\accountdata\" />
+    <Folder Include="data\monsterdata\" />
+    <Folder Include="data\movedata\" />
+    <Folder Include="data\speciesdata\" />
+    <Folder Include="src\account\" />
+    <Folder Include="src\account\accountmanager\" />
+    <Folder Include="src\monster\" />
+    <Folder Include="src\pet\" />
+    <Folder Include="src\pet\components\" />
+    <Folder Include="src\pet\components\abilityservice\" />
+    <Folder Include="src\pet\components\loader\" />
+    <Folder Include="src\pet\components\speciesloader\" />
+    <Folder Include="src\pet\components\writer\" />
+    <Folder Include="src\pet\petinstancedb\" />
+    <Folder Include="src\pet\petparty\" />
+    <Folder Include="src\settings\" />
+    <Folder Include="src\species\" />
+    <Folder Include="utils\" />
+    <Folder Include="src\" />
+    <Folder Include="utils\ecs\" />
+    <Folder Include="utils\lifecycle\" />
+    <Folder Include="utils\loader\" />
+    <Folder Include="utils\stats\" />
+    <Folder Include="utils\writer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="data\accountdata\accountconfig.ts" />
+    <TypeScriptCompile Include="data\accountdata\index.ts" />
+    <TypeScriptCompile Include="data\index.ts" />
+    <TypeScriptCompile Include="data\monsterdata\config.ts" />
+    <TypeScriptCompile Include="data\monsterdata\index.ts" />
+    <TypeScriptCompile Include="data\monsterdata\monsterdb.ts" />
+    <TypeScriptCompile Include="data\monsterdata\state.ts" />
+    <TypeScriptCompile Include="data\movedata\index.ts" />
+    <TypeScriptCompile Include="data\movedata\movedb.ts" />
+    <TypeScriptCompile Include="data\speciesdata\index.ts" />
+    <TypeScriptCompile Include="data\speciesdata\speciesconfig.ts" />
+    <TypeScriptCompile Include="data\speciesdata\speciesdata.ts" />
+    <TypeScriptCompile Include="src\account\account.mock.ts" />
+    <TypeScriptCompile Include="src\account\account.spec.ts" />
+    <TypeScriptCompile Include="src\account\account.ts" />
+    <TypeScriptCompile Include="src\account\accountmanager\accountmanager.mock.ts" />
+    <TypeScriptCompile Include="src\account\accountmanager\accountmanager.spec.ts" />
+    <TypeScriptCompile Include="src\account\accountmanager\accountmanager.ts" />
+    <TypeScriptCompile Include="src\account\accountmanager\index.ts" />
+    <TypeScriptCompile Include="src\account\index.ts" />
+    <TypeScriptCompile Include="src\index.ts" />
+    <TypeScriptCompile Include="src\monster\index.ts" />
+    <TypeScriptCompile Include="src\monster\instance_manager.mock.ts" />
+    <TypeScriptCompile Include="src\monster\instance_manager.spec.ts" />
+    <TypeScriptCompile Include="src\monster\instance_manager.ts" />
+    <TypeScriptCompile Include="src\monster\monster.ts" />
+    <TypeScriptCompile Include="src\pet\components\abilityservice\abilityservice.ts" />
+    <TypeScriptCompile Include="src\pet\components\abilityservice\index.ts" />
+    <TypeScriptCompile Include="src\pet\components\index.ts" />
+    <TypeScriptCompile Include="src\pet\components\loader\index.ts" />
+    <TypeScriptCompile Include="src\pet\components\loader\loader.ts" />
+    <TypeScriptCompile Include="src\pet\components\speciesloader\index.ts" />
+    <TypeScriptCompile Include="src\pet\components\speciesloader\speciesloader.ts" />
+    <TypeScriptCompile Include="src\pet\components\writer\index.ts" />
+    <TypeScriptCompile Include="src\pet\components\writer\writer.spec.ts" />
+    <TypeScriptCompile Include="src\pet\components\writer\writer.ts" />
+    <TypeScriptCompile Include="src\pet\index.ts" />
+    <TypeScriptCompile Include="src\pet\pet.mock.ts" />
+    <TypeScriptCompile Include="src\pet\pet.spec.ts" />
+    <TypeScriptCompile Include="src\pet\pet.ts" />
+    <TypeScriptCompile Include="src\pet\petinstancedb\index.ts" />
+    <TypeScriptCompile Include="src\pet\petinstancedb\petinstancedb.spec.ts" />
+    <TypeScriptCompile Include="src\pet\petinstancedb\petinstancedb.ts" />
+    <TypeScriptCompile Include="src\pet\petparty\index.ts" />
+    <TypeScriptCompile Include="src\pet\petparty\petparty.mock.ts" />
+    <TypeScriptCompile Include="src\pet\petparty\petparty.spec.ts" />
+    <TypeScriptCompile Include="src\pet\petparty\petparty.ts" />
+    <TypeScriptCompile Include="src\settings\index.ts" />
+    <TypeScriptCompile Include="src\settings\settings.ts" />
+    <TypeScriptCompile Include="src\species\index.ts" />
+    <TypeScriptCompile Include="src\species\species.ts" />
+    <TypeScriptCompile Include="src\species\speciesdb.ts" />
+    <TypeScriptCompile Include="utils\ecs\component.h.ts" />
+    <TypeScriptCompile Include="utils\ecs\entity.spec.ts" />
+    <TypeScriptCompile Include="utils\ecs\entity.ts" />
+    <TypeScriptCompile Include="utils\ecs\index.ts" />
+    <TypeScriptCompile Include="utils\index.ts" />
+    <TypeScriptCompile Include="utils\lifecycle\index.ts" />
+    <TypeScriptCompile Include="utils\lifecycle\lifecycle.h.ts" />
+    <TypeScriptCompile Include="utils\loader\index.ts" />
+    <TypeScriptCompile Include="utils\loader\loader.ts" />
+    <TypeScriptCompile Include="utils\stats\index.ts" />
+    <TypeScriptCompile Include="utils\stats\stats.h.ts" />
+    <TypeScriptCompile Include="utils\stats\stats.spec.ts" />
+    <TypeScriptCompile Include="utils\stats\stats.ts" />
+    <TypeScriptCompile Include="utils\stats\stattable.ts" />
+    <TypeScriptCompile Include="utils\writer\index.ts" />
+    <TypeScriptCompile Include="utils\writer\writer.ts" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
